@@ -9,11 +9,11 @@ class Page extends Component {
     render() {
         const { year, photos } = this.props;
         return (
-            <div>
+            <div className='ib page'>
                 <p>
-                    <button onClick={this.onYearBtnClick.bind(this)}>2016</button>
-                    <button onClick={this.onYearBtnClick.bind(this)}>2015</button>
-                    <button onClick={this.onYearBtnClick.bind(this)}>2014</button>
+                    <button className='btn' onClick={this.onYearBtnClick.bind(this)}>2016</button>
+                    <button className='btn' onClick={this.onYearBtnClick.bind(this)}>2015</button>
+                    <button className='btn' onClick={this.onYearBtnClick.bind(this)}>2014</button>
                 </p>
                 <h3>{year} год</h3>
                 <p>У тебя {photos.length} фото.</p>
